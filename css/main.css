@@ -175,9 +175,10 @@ h3 {
     height: 150px;
     max-width: 225px;
 }
- p {
+
+p {
     line-height: 27px;
- }
+}
 
 /*footer*/
 footer {
@@ -217,6 +218,10 @@ footer {
 /* TABLET VERSION */
 @media screen and (max-width: 1020px) {
 
+    .container {
+        width: 90%;
+    }
+
     .row {
         display: block;
     }
@@ -226,8 +231,11 @@ footer {
         width: 100%;
     }
 
+    .col-sx img {
+        min-width: 100%;
+    }
 
-    /*sezione social*/
+
     .social-desktop {
         display: none;
     }
@@ -237,6 +245,34 @@ footer {
     }
 
 
+    #small-tiramisu {
+        height: 200px;
+        max-width: 300px;
+    }
+
+    p {
+        line-height: 45px;
+        font-size: 15px;
+    }
+
+    footer {
+       justify-content: center;
+       flex-direction: column;
+    }
+
+    
+
+    .nav-footer {
+        padding-top: 10px;
+        justify-content: center;
+
+    }
+
+    .info-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
 
