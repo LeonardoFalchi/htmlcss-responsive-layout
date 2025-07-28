@@ -25,13 +25,29 @@ header {
     height: 100px;
 }
 
+h1 {
+    color: #FF9613;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+
 /* contenuto */
 .container {
     width: 80%;
     margin: 50px auto;
-    /*debug*/
-    background-color: yellow;
-    min-height: 300px;
+   
+}
+
+.title-mobile {
+    display: none;
+}
+
+h2 {
+
 }
 
 .row {
@@ -40,27 +56,52 @@ header {
 
 .col-sx {
     width: 70%;
-    /*debug*/
-    min-height: 150px;
-    background-color: aqua;
+    
+}
+
+.col-sx img {
+    max-width: 100%;
 }
 
 .col-dx {
     width: 30%;
-    /*debug*/
-    min-height: 150px;
-    background-color: brown;
+    display: flex;
+    flex-direction: column;
 }
 
+/*sezione social */
+.social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-tablet-mobile {
+    display: none;
+}
+
+
+
+/*sezione presentazione ricetta */
 #small-tiramisu {
     height: 150px;
-    max-width: 225px ;
+    max-width: 225px;
 }
 
-
+/*footer*/
 footer {
     height: 100px;
     background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-footer {
+    display: flex;
+}
+
+.nav-footer ul {
+    display: flex;
 }
 
 
@@ -76,6 +117,16 @@ footer {
     .col-sx,
     .col-dx {
         width: 100%;
+    }
+
+
+    /*sezione social*/
+    .social-desktop {
+        display: none;
+    }
+
+    .social-tablet-mobile {
+        display: flex;
     }
 
 
@@ -97,8 +148,23 @@ footer {
     }
 
     #small-tiramisu {
-    margin: 0 auto;
-}
+        margin: 0 auto;
+    }
+
+
+    /*sezione social*/
+    .social-desktop {
+        display: none;
+    }
+
+    .social-tablet-mobile {
+        display: flex;
+    }
+
+
+
+
+
 
 
 }
