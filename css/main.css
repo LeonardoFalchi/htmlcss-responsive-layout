@@ -5,6 +5,84 @@
 }
 
 :root {
-    font-family:'Helvetica Neue', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     font-size: 12px;
+}
+
+.float-sx {
+    float: left;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/* header */
+header {
+    background-color: bisque;
+    height: 100px;
+}
+
+/* contenuto */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    /*debug*/
+    background-color: yellow;
+    min-height: 300px;
+}
+
+.row {
+    display: flex;
+}
+
+.col-sx {
+    width: 70%;
+    /*debug*/
+    min-height: 150px;
+    background-color: aqua;
+}
+
+.col-dx {
+    width: 30%;
+    /*debug*/
+    min-height: 150px;
+    background-color: brown;
+}
+
+#small-tiramisu {
+    height: 150px;
+    max-width: 100%;
+}
+
+
+footer {
+    height: 100px;
+    background-color: orange;
+}
+
+
+
+
+/* TABLET VERSION */
+@media screen and (max-width: 1020px) {
+
+
+
+}
+
+
+
+
+
+
+
+/* MOBILE VERSION */
+@media screen and (max-width: 640px) {
+
+
+
+
 }
