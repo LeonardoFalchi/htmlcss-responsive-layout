@@ -117,12 +117,16 @@ h5 {
     text-decoration: none;
 }
 
-.social-desktop,
-.social-tablet-mobile {
+.social-desktop {
     background-color: white;
     padding: 8px 40px;
     border-radius: 15px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-tablet,
+.social-mobile {
+    display: none;
 }
 
 .fa-facebook {
@@ -145,7 +149,7 @@ h5 {
     color: #E62122;
 }
 
-.social-tablet-mobile {
+.social-tablet {
     display: none;
 }
 
@@ -236,12 +240,17 @@ footer {
     }
 
 
-    .social-desktop {
+    .social-desktop,
+    .social-mobile {
         display: none;
     }
 
-    .social-tablet-mobile {
+    .social-tablet {
         display: flex;
+        background-color: white;
+        padding: 8px 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     }
 
 
@@ -256,11 +265,11 @@ footer {
     }
 
     footer {
-       justify-content: center;
-       flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
     }
 
-    
+
 
     .nav-footer {
         padding-top: 10px;
@@ -290,24 +299,83 @@ footer {
         flex-direction: column;
     }
 
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .title-desktop,
+    .social-mobile {
+        display: none;
+    }
+
+    .title-mobile {
+        display: block;
+    }
+
+    .col-dx {
+        padding-bottom: 30px;
+    }
+
     #small-tiramisu {
         margin: 0 auto;
     }
 
 
     /*sezione social*/
-    .social-desktop {
+    .social {
+        font-size: 17px;
+    }
+
+    .social-desktop,
+    .social-tablet {
         display: none;
     }
 
-    .social-tablet-mobile {
+    .social-mobile {
         display: flex;
+        background-color: white;
+        padding: 8px 9px;
+        border-radius: 15px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .float-sx {
+        float: none;
+    }
+
+    .clearfix::after {
+        display: none
+    }
+
+    p {
+        display: block;
+    }
+
+    .clearfix {
+        display: block;
+    }
+
+     #small-tiramisu {
+       display: block;
+    }
+
+    footer {
+        height: 150px;
     }
 
 
-
-
-
-
-
+    .nav-footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 82%;
+    }
 }
